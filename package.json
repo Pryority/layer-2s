@@ -1,6 +1,6 @@
 {
-  "name": "layer-1-access",
-  "version": "0.2.1",
+  "name": "layer-2s",
+  "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

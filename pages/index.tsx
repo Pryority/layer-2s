@@ -33,16 +33,11 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="flex flex-col items-start w-fit text-xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl justify-center text-start text-zinc-700 dark:text-zinc-300">
-          <h2 className="pb-2"><span className="text-zinc-900 dark:text-zinc-50 uppercase tracking-tighter italic font-extrabold">Ethereum</span> will become the</h2>
-          <h2>most <span className="bg-clip-text text-transparent bg-gradient-to-br from-pink-500 via-red-500 to-orange-400 font-bold">powerful</span>,</h2>
-          <h2>most <span className="bg-clip-text text-transparent bg-gradient-to-bl from-teal-500 via-sky-500 to-purple-400 font-bold">used</span>,</h2>
-          <h2>most <span className="bg-clip-text text-transparent bg-gradient-to-bl from-yellow-500 via-amber-500 to-orange-500 font-bold">credibly-neutral</span>, and</h2>
-          <h2>most <span className="bg-clip-text text-transparent bg-gradient-to-br from-teal-500 via-lime-500 to-green-500 font-bold">energy-efficient</span></h2>
-          <h2 className="pt-4">blockchain network in the world.</h2>
+          Layer-2s
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
+      <div className="snap-start w-screen min-h-screen flex items-center justify-center bg-red-500">
         <motion.section 
           id="question" 
           initial={{ opacity: 0, x: 300 }}
@@ -50,12 +45,12 @@ export default function Home() {
           transition={{ duration: .5 }}
           className="p-4 flex w-screen items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl">
-            But what will it take to get there?
+          Optimism
           </h2>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
+      <div className="snap-start w-screen min-h-screen flex items-center justify-center bg-purple-900">
         <motion.section 
           id="systems" 
           initial={{ opacity: 0, x: -300 }}
@@ -63,7 +58,7 @@ export default function Home() {
           transition={{ duration: .5 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            {"Systems must be established and adopted that aim to support a special type of client, called a..."}
+          Starknet
           </h2>
         </motion.section>
       </div>
