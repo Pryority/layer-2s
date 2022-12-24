@@ -1,4 +1,4 @@
-import { ArrowTopRightOnSquareIcon, ArrowUpIcon, CubeTransparentIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, CircleStackIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, ArrowUpIcon, CubeTransparentIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, CircleStackIcon, MinusCircleIcon, PlusCircleIcon, ArrowDownIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
@@ -66,43 +66,60 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl absolute text-start tracking-widest text-zinc-700 dark:text-zinc-300 cursor-default">
             LAYER-2s
             </h1>
+            <div className="w-96 h-96 z-[-10] opacity-10">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 784.37 1277.39">
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"/>
+                  <g id="_1421394342400">
+                    <g>
+                      <polygon fill="#343434" fill-rule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54 "/>
+                      <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33 "/>
+                      <polygon fill="#3C3C3B" fill-rule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89 "/>
+                      <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89 "/>
+                      <polygon fill="#141414" fill-rule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33 "/>
+                      <polygon fill="#393939" fill-rule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33 "/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
             <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-5xl text-start text-zinc-700 dark:text-zinc-500 cursor-default uppercase tracking-[.4px]">
               Ethereum for everyone
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center">
-            <div className="p-1">
-              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
+            <div className="p-1 flex w-full relative justify-center">
+              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tigher">
                   Optimism
                 </h3>
               </Link>
             </div>
-            <div className="p-1">
-              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
+            <div className="p-1 flex w-full relative justify-center">
+              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Arbitrum 
                 </h3>
               </Link>
             </div>
-            <div className="p-1">
-              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
+            <div className="p-1 flex w-full relative justify-center">
+              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Starknet 
                 </h3>
               </Link>
             </div>
-            <div className="p-1">
-              <Link href={"#zksync"} className="flex bg-violet-800 border border-violet-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-800 px-6 py-2">
+            <div className="p-1 flex w-full relative justify-center">
+              <Link href={"#zksync"} className="flex bg-violet-500 border border-violet-700 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   zkSync
                 </h3>
               </Link>
             </div>
-            <div className="p-1">
-              <Link href={"#lightning"} className="flex bg-yellow-800 border border-yellow-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-800 px-6 py-2">
+            <div className="p-1 sm:col-span-2 md:col-span-4 justify-center flex items-center">
+              <Link href={"#boba"} className="flex bg-lime-800 border w-fit border-lime-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
-                  Lightning
+                  Boba
                 </h3>
               </Link>
             </div>
@@ -116,7 +133,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tighest">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tightest">
           Optimism
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
@@ -152,7 +169,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tightest">
           Arbitrum
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
@@ -188,7 +205,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-purple-900 uppercase tracking-tighest">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-purple-900 uppercase tracking-tightest">
           Starknet
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
@@ -224,7 +241,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-violet-900 uppercase tracking-tighest">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-violet-900 uppercase tracking-tightest">
           zkSync
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
@@ -253,21 +270,21 @@ export default function Home() {
           </section>
         </motion.section>
       </div>
-      {/* --------------------------------------- */}
-      <div id="lightning" className="snap-start w-screen min-h-screen flex items-center justify-center bg-yellow-600">
-        <motion.section 
+
+      <div id="boba" className="snap-start w-screen min-h-screen flex items-center justify-center bg-lime-500">
+        <motion.section  
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-yellow-900 uppercase tracking-tighest">
-          Lightning
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-lime-900 uppercase tracking-tightest">
+          Boba
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
             <div className="p-1">
               <Link
-                href={"https://www.binance.com/en/convert"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
+                href={"https://oolongswap.com/#/"}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-lime-700 border-lime-300 text-lime-50 transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
@@ -277,8 +294,8 @@ export default function Home() {
             </div>
             <div className="p-1">
               <Link
-                href={"https://muun.com/"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
+                href={"https://gateway.boba.network/"}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-lime-700 border-lime-300 text-lime-50 transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Bridge
@@ -289,16 +306,18 @@ export default function Home() {
           </section>
         </motion.section>
       </div>
+
       {/* --------------------------------------- */}
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: .5  }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-            {"Eventually, light clients will run on mobile phones or embedded devices (IoT) and accept data from light nodes."}
+          className="p-4 sm:max-w-lg flex flex-col space-y-8 sm:space-y-16 md:space-y-24 w-full items-center justify-center">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl text-center md:text-end">
+            {"Scaling Ethereum without compromising on security or decentralization."}
           </h2>
+          <ArrowDownIcon className="h-4 w-4 fixed bottom-4 animate-pulse"/>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
