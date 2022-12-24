@@ -1,4 +1,4 @@
-import { ArrowTopRightOnSquareIcon, ArrowUpIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, ArrowUpIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, CircleStackIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
@@ -62,7 +62,14 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="flex flex-col items-center w-fit justify-center space-y-8">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-start text-zinc-700 dark:text-zinc-300 cursor-default">Layer-2s</h1>
+          <div className="flex flex-col items-center relative w-full space-y-20 h-[120px]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl absolute text-start tracking-widest text-zinc-700 dark:text-zinc-300 cursor-default">
+            LAYER-2s
+            </h1>
+            <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-5xl text-start text-zinc-700 dark:text-zinc-500 cursor-default uppercase tracking-[-3.4px]">
+              Ethereum for everyone
+            </h1>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             <div className="p-1">
               <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 rounded-full transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
@@ -98,49 +105,97 @@ export default function Home() {
       {/* --------------------------------------- */}
       <div id="optimism" className="snap-start w-screen min-h-screen flex items-center justify-center bg-red-500">
         <motion.section 
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 flex w-screen items-center justify-center">
+          transition={{ duration: .1 }}
+          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tighest">
           Optimism
           </h2>
+          <section>
+            <div>
+              <button 
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Trade
+                </p>
+                <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </button>
+            </div>
+          </section>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
       <div id="starknet" className="snap-start w-screen min-h-screen flex items-center justify-center bg-purple-700">
         <motion.section  
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
+          transition={{ duration: .1 }}
+          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-purple-900 uppercase tracking-tighest">
           Starknet
           </h2>
+          <section>
+            <div>
+              <button 
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Trade
+                </p>
+                <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </button>
+            </div>
+          </section>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
       <div id="arbitrum" className="snap-start w-screen min-h-screen flex items-center justify-center bg-blue-700">
         <motion.section 
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
+          transition={{ duration: .1 }}
+          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
           Arbitrum
           </h2>
+          <section>
+            <div>
+              <button 
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Trade
+                </p>
+                <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </button>
+            </div>
+          </section>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
       <div id="lightning" className="snap-start w-screen min-h-screen flex items-center justify-center bg-yellow-600">
         <motion.section 
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
+          transition={{ duration: .1 }}
+          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-yellow-900 uppercase tracking-tighest">
           Lightning
           </h2>
+          <section>
+            <div>
+              <button 
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Trade
+                </p>
+                <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </button>
+            </div>
+          </section>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
@@ -161,7 +216,7 @@ export default function Home() {
           id="explanation-p1" 
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
               Rather than downloading every block like full nodes, light nodes download <span className="underline">block headers</span>.
@@ -174,7 +229,7 @@ export default function Home() {
           id="explanation-p1" 
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
               These headers only contain summary information about the contents of the blocks.
@@ -187,7 +242,7 @@ export default function Home() {
           id="question" 
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
             A light node can independently verify the data they receive against the state roots in the block headers.
@@ -200,7 +255,7 @@ export default function Home() {
           id="question" 
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
             Any other information required by the light node gets requested from a full node.
@@ -213,7 +268,7 @@ export default function Home() {
           id="question" 
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
             Light nodes enable users to participate in the Ethereum network without the powerful hardware or high bandwidth required to run full nodes ❤️
@@ -224,91 +279,7 @@ export default function Home() {
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           id="question" 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-            Talented and dedicated Ethereum developers have been experimenting with light client solutions.
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="portal-network" 
-          initial={{ opacity: 0, y: 300 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-3xl  xl:max-w-5xl flex flex-col space-y-2 w-4/5 items-start justify-center text-4xl sm:text-6xl md:text-8xl text-start font-extrabold uppercase tracking-widest bg-clip-text text-transparent bg-gradient-to-br from-yellow-500 via-lime-500 to-green-400">
-          <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl">
-            The
-          </h2>
-          <h2>
-            Portal
-          </h2>
-          <h2>
-            Network
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="portal-network-2" 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-            {"The \"Portal Network\" is an ongoing endeavour to enable lightweight protocol access to resource constrained devices."}
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="portal-network-3" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            {"The term \"portal\" is used to indicate that these networks provide a view into the protocol but are not critical to the operation of the core Ethereum protocol."}
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="portal-network-4" 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-6xl text-end">
-            The Portal Network will be comprised of one or more decentralized peer-to-peer networks which together provide the data and functionality necessary to expose the standard JSON-RPC API.
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="portal-network-5" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-6xl text-start">
-            These networks are being specially designed to ensure that clients participating in these networks can do so with minimal expendature of networking bandwidth, CPU, RAM, and HDD resources.
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="question" 
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
@@ -485,9 +456,9 @@ export default function Home() {
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           id="portal-network-5" 
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5 }}
+          transition={{ duration: .1 }}
           className="p-4 flex space-x-2 w-full items-center justify-center">
           <Link href={"#intro"} className="flex items-center space-x-2 text-lg bg-zinc-100 dark:bg-zinc-900 hover:bg-slate-100 dark:hover:bg-zinc-700 rounded-lg hover:shadow-sm transition-all ease-in-out duration-150 hover:border dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
             <p>Go to Top of Page</p>
