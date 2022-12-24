@@ -1,4 +1,4 @@
-import { ArrowTopRightOnSquareIcon, ArrowUpIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, CircleStackIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, ArrowUpIcon, CubeTransparentIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, CircleStackIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default function Home() {
     color: string;
   }
   
-  const layers = [
+  const layers: Layer[] = [
     {
       name: "Optimism",
       website: "",
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </motion.section>
       </div>
-      {/* --------------------------------------- */}
+      {/* -----------LAYERS----------- */}
       <div id="optimism" className="snap-start w-screen min-h-screen flex items-center justify-center bg-red-500">
         <motion.section 
           initial={{ opacity: 0, y: 200 }}
@@ -112,16 +112,28 @@ export default function Home() {
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tighest">
           Optimism
           </h2>
-          <section>
-            <div>
-              <button 
+          <section className="flex w-full items-center justify-center space-x-4">
+            <div className="p-1">
+              <Link
+                href={"https://kwenta.eth.limo"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
                 </p>
                 <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
-              </button>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link
+                href={"https://kwenta.eth.limo"}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Bridge
+                </p>
+                <CubeTransparentIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
             </div>
           </section>
         </motion.section>
@@ -136,16 +148,28 @@ export default function Home() {
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-purple-900 uppercase tracking-tighest">
           Starknet
           </h2>
-          <section>
-            <div>
-              <button 
+          <section className="flex w-full items-center justify-center space-x-4">
+            <div className="p-1">
+              <Link
+                href={""}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
                 </p>
                 <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
-              </button>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link
+                href={""}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Bridge
+                </p>
+                <CubeTransparentIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
             </div>
           </section>
         </motion.section>
@@ -160,16 +184,28 @@ export default function Home() {
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
           Arbitrum
           </h2>
-          <section>
-            <div>
-              <button 
+          <section className="flex w-full items-center justify-center space-x-4">
+            <div className="p-1">
+              <Link
+                href={""}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
                 </p>
                 <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
-              </button>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link
+                href={""}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Bridge
+                </p>
+                <CubeTransparentIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
             </div>
           </section>
         </motion.section>
@@ -184,16 +220,28 @@ export default function Home() {
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-yellow-900 uppercase tracking-tighest">
           Lightning
           </h2>
-          <section>
-            <div>
-              <button 
+          <section className="flex w-full items-center justify-center space-x-4">
+            <div className="p-1">
+              <Link
+                href={""}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
                 </p>
                 <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
-              </button>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link
+                href={""}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Bridge
+                </p>
+                <CubeTransparentIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
             </div>
           </section>
         </motion.section>
