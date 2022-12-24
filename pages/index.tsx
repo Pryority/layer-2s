@@ -19,22 +19,33 @@ export default function Home() {
   const toggleFAQ4 = () => {
     setShowFAQ4(!showFAQ4);
   };
+
+  type Layer = {
+    name: string;
+    website: string;
+    color: string;
+  }
+  
   const layers = [
     {
       name: "Optimism",
       website: "",
+      color: "red",
     },
     {
       name: "Starknet",
       website: "",
+      color: "purple",
     },
     {
       name: "Arbitrum",
       website: "",
+      color: "blue",
     },
     {
       name: "Lightning",
       website: "",
+      color: "yellow",
     },
   ];
   return (
@@ -121,7 +132,7 @@ export default function Home() {
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-     <div id="lightning" className="snap-start w-screen min-h-screen flex items-center justify-center bg-yellow-600">
+      <div id="lightning" className="snap-start w-screen min-h-screen flex items-center justify-center bg-yellow-600">
         <motion.section 
           initial={{ opacity: 0, y: 300 }}
           whileInView={{ opacity: 1, y: 0 }}
