@@ -19,58 +19,116 @@ export default function Home() {
   const toggleFAQ4 = () => {
     setShowFAQ4(!showFAQ4);
   };
+  const layers = [
+    {
+      name: "Optimism",
+      website: "",
+    },
+    {
+      name: "Starknet",
+      website: "",
+    },
+    {
+      name: "Arbitrum",
+      website: "",
+    },
+    {
+      name: "Lightning",
+      website: "",
+    },
+  ];
   return (
     <div className="flex flex-col w-full snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden">
       <Head>
-        <title>enchain.eth</title>
-        <meta name="description" content="An Ethereum Portal Network educational website" />
+        <title>Layer-2s.eth</title>
+        <meta name="description" content="A website about Layer-2 Ethereum" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header/>
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section id="intro"
+      <div className="snap-start w-screen min-h-screen flex items-center justify-center bg-gradient-to-b from-zinc-900 via-slate-900 to-stone-900">
+        <motion.section id="start"
           initial={{ opacity: 0}}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex flex-col items-start w-fit text-xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl justify-center text-start text-zinc-700 dark:text-zinc-300">
-          Layer-2s
+          className="flex flex-col items-center w-fit justify-center space-y-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-start text-zinc-700 dark:text-zinc-300 cursor-default">Layer-2s</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            <div className="p-1">
+              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 rounded-full transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tigher">
+                  Optimism
+                </h3>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 rounded-full transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tigher">
+                  Starknet 
+                </h3>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 rounded-full transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tigher">
+                  Arbitrum 
+                </h3>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link href={"#lightning"} className="flex bg-yellow-800 border border-yellow-600 rounded-full transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tigher">
+                  Lightning
+                </h3>
+              </Link>
+            </div>
+          </div>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center bg-red-500">
+      <div id="optimism" className="snap-start w-screen min-h-screen flex items-center justify-center bg-red-500">
         <motion.section 
-          id="question" 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .5 }}
           className="p-4 flex w-screen items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tighest">
           Optimism
           </h2>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center bg-purple-900">
-        <motion.section 
-          id="systems" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
+      <div id="starknet" className="snap-start w-screen min-h-screen flex items-center justify-center bg-purple-700">
+        <motion.section  
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .5 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-purple-900 uppercase tracking-tighest">
           Starknet
           </h2>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div id="light-client" className="snap-start w-screen min-h-screen flex items-center justify-center">
+      <div id="arbitrum" className="snap-start w-screen min-h-screen flex items-center justify-center bg-blue-700">
         <motion.section 
           initial={{ opacity: 0, y: 300 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .5  }}
-          className="flex w-full items-center justify-center">
-          <h2 className="text-[32px] sm:text-[48px] md:text-[64px] lg:text-[88px] xl:text-[128px] tracking-widest font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-zinc-600 via-purple-700 to-violet-500">
-            LIGHT CLIENT
+          transition={{ duration: .5 }}
+          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
+          Arbitrum
+          </h2>
+        </motion.section>
+      </div>
+      {/* --------------------------------------- */}
+     <div id="lightning" className="snap-start w-screen min-h-screen flex items-center justify-center bg-yellow-600">
+        <motion.section 
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .5 }}
+          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-yellow-900 uppercase tracking-tighest">
+          Lightning
           </h2>
         </motion.section>
       </div>
@@ -398,8 +456,7 @@ export default function Home() {
                   <div className="pt-2 pb-4 flex w-full justify-center">
                     <Link 
                       href="https://www.youtube.com/watch?v=MZxqRs_tLNs" 
-                      target={"_blank"}
-                      className="flex space-x-2 items-center rounded-lg bg-teal-100 border border-teal-400 visited:text-teal-900 visited:hover:text-teal-900/60 text-teal-700 hover:text-sky-900 focus:bg-teal-600 py-[0.34px] px-4 font-base text-xs t-1 hover:bg-sky-200 hover:border-sky-400"
+                      target={"_blank"} className="flex space-x-2 items-center rounded-lg bg-teal-100 border border-teal-400 visited:text-teal-900 visited:hover:text-teal-900/60 text-teal-700 hover:text-sky-900 focus:bg-teal-600 py-[0.34px] px-4 font-base text-xs t-1 hover:bg-sky-200 hover:border-sky-400"
                     >
                       <p className="leading-7 w-full dark:text-sky-100">
                         {"Democratizing Ethereum: Breaking Down the Monolith"}
