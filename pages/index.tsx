@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
+import ETHShard from "../components/ETHShard";
 import FAQ from "../components/FAQ";
 import Header from "../components/Header";
 
@@ -62,62 +63,48 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="flex flex-col items-center w-screen justify-center lg:space-y-8">
-          <div className="flex flex-col items-center w-full relative space-y-8 sm:space-y-10 md:space-y-14 lg:space-y-16 h-[80px] sm:h-[100px] md:h-[110px]">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl absolute text-start tracking-widest text-zinc-700 dark:text-zinc-300 cursor-default">
+          <div className="flex flex-col items-center w-full relative space-y-8 sm:space-y-10 md:space-y-14 lg:space-y-16 xl:space-y-20 h-[80px] sm:h-[100px] md:h-[110px]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl absolute text-start tracking-widest text-zinc-300 cursor-default">
             LAYER-2s
             </h1>
             <div className="w-96 h-96 z-[-10] opacity-10">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 784.37 1277.39">
-                <g id="Layer_x0020_1">
-                  <metadata id="CorelCorpID_0Corel-Layer"/>
-                  <g id="_1421394342400">
-                    <g>
-                      <polygon fill="#343434" fill-rule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54 "/>
-                      <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33 "/>
-                      <polygon fill="#3C3C3B" fill-rule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89 "/>
-                      <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89 "/>
-                      <polygon fill="#141414" fill-rule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33 "/>
-                      <polygon fill="#393939" fill-rule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33 "/>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+              <ETHShard/>
             </div>
-            <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-5xl text-start text-zinc-700 dark:text-zinc-500 cursor-default uppercase tracking-[.4px]">
+            <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-3xl text-start text-zinc-500 cursor-default uppercase tracking-[.4px]">
               Ethereum for everyone
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center">
             <div className="p-1 flex w-full relative justify-center">
-              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
+              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tigher">
                   Optimism
                 </h3>
               </Link>
             </div>
             <div className="p-1 flex w-full relative justify-center">
-              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
+              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Arbitrum 
                 </h3>
               </Link>
             </div>
             <div className="p-1 flex w-full relative justify-center">
-              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
+              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Starknet 
                 </h3>
               </Link>
             </div>
             <div className="p-1 flex w-full relative justify-center">
-              <Link href={"#zksync"} className="flex bg-violet-500 border border-violet-700 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-800 px-6 py-2">
+              <Link href={"#zksync"} className="flex bg-violet-500 border border-violet-700 sm:w-full rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   zkSync
                 </h3>
               </Link>
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-4 justify-center flex items-center">
-              <Link href={"#boba"} className="flex bg-lime-800 border w-fit border-lime-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-800 px-6 py-2">
+              <Link href={"#boba"} className="flex bg-lime-800 border w-fit border-lime-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Boba
                 </h3>
@@ -211,7 +198,7 @@ export default function Home() {
           <section className="flex w-full items-center justify-center space-x-4">
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://www.starkswap.co/app/swap"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -222,7 +209,7 @@ export default function Home() {
             </div>
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://starkgate.starknet.io/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -247,7 +234,7 @@ export default function Home() {
           <section className="flex w-full items-center justify-center space-x-4">
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://trade.zigzag.exchange/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -258,7 +245,7 @@ export default function Home() {
             </div>
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://portal.zksync.io/bridge"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -306,87 +293,38 @@ export default function Home() {
           </section>
         </motion.section>
       </div>
-
       {/* --------------------------------------- */}
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: .5  }}
-          className="p-4 sm:max-w-lg flex flex-col space-y-8 sm:space-y-16 md:space-y-24 w-full items-center justify-center">
-          <h2 className="text-3xl sm:text-5xl md:text-7xl text-center md:text-end">
-            {"Scaling Ethereum without compromising on security or decentralization."}
-          </h2>
-          <ArrowDownIcon className="h-4 w-4 fixed bottom-4 animate-pulse"/>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="explanation-p1" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .1 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-              Rather than downloading every block like full nodes, light nodes download <span className="underline">block headers</span>.
+          className="p-4 xl:max-w-5xl flex flex-col space-y-8 sm:space-y-16 md:space-y-24 w-full items-center justify-center">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl xl:text-8xl text-center md:text-end">
+            Scaling Ethereum without compromising on security or decentralization.
           </h2>
         </motion.section>
       </div>
       {/* --------------------------------------- */}
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
-          id="explanation-p1" 
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .1 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-              These headers only contain summary information about the contents of the blocks.
+          transition={{ duration: .5  }}
+          className="p-4 xl:max-w-6xl flex flex-col space-y-8 sm:space-y-16 md:space-y-24 w-full items-start justify-center">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl text-center">
+          What is layer 2?
           </h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-start">
+          Layer-2 (L2) is a collective term to describe a specific set of Ethereum scaling solutions. A layer-2 is a separate blockchain that extends Ethereum and inherits the security guarantees of Ethereum.
+          </h2>
+          {/* <h2 className="text-2xl sm:text-3xl md:text-4xl text-start">
+          To understand layer-2 better, we need to explain layer-1 (L1).
+          </h2> */}
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="question" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .1 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            A light node can independently verify the data they receive against the state roots in the block headers.
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="question" 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .1 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-            Any other information required by the light node gets requested from a full node.
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
-        <motion.section 
-          id="question" 
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .1 }}
-          className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
-          <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            Light nodes enable users to participate in the Ethereum network without the powerful hardware or high bandwidth required to run full nodes ❤️
-          </h2>
-        </motion.section>
-      </div>
-      {/* --------------------------------------- */}
-      <div className="snap-start w-screen min-h-screen flex items-center justify-center">
+      {/* <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           id="question" 
           initial={{ opacity: 0, y: 200 }}
@@ -561,7 +499,7 @@ export default function Home() {
             </div>
           </section>
         </motion.section>
-      </div>
+      </div> */}
       {/* --------------------------------------- */}
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
@@ -569,8 +507,8 @@ export default function Home() {
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
-          className="p-4 flex space-x-2 w-full items-center justify-center">
-          <Link href={"#intro"} className="flex items-center space-x-2 text-lg bg-zinc-100 dark:bg-zinc-900 hover:bg-slate-100 dark:hover:bg-zinc-700 rounded-lg hover:shadow-sm transition-all ease-in-out duration-150 hover:border dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
+          className="p-4 flex w-full space-x-2 items-center justify-center">
+          <Link href={"#start"} className="flex items-center space-x-2 text-lg bg-zinc-100 dark:bg-zinc-900 hover:bg-slate-100 dark:hover:bg-zinc-700 rounded-lg hover:shadow-sm transition-all ease-in-out duration-150 hover:border dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
             <p>Go to Top of Page</p>
             <ArrowUpIcon className="h-4 w-4"/>
           </Link>
