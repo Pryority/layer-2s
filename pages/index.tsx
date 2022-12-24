@@ -61,40 +61,47 @@ export default function Home() {
           initial={{ opacity: 0}}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex flex-col items-center w-fit justify-center space-y-8">
-          <div className="flex flex-col items-center relative w-full space-y-20 h-[120px]">
+          className="flex flex-col items-center w-screen justify-center lg:space-y-8">
+          <div className="flex flex-col items-center w-full relative space-y-8 sm:space-y-10 md:space-y-14 lg:space-y-16 h-[80px] sm:h-[100px] md:h-[110px]">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl absolute text-start tracking-widest text-zinc-700 dark:text-zinc-300 cursor-default">
             LAYER-2s
             </h1>
-            <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-5xl text-start text-zinc-700 dark:text-zinc-500 cursor-default uppercase tracking-[-3.4px]">
+            <h1 className="text-base sm:text-lg md:text-xl absolute z-20 opacity-80 lg:text-xl xl:text-5xl text-start text-zinc-700 dark:text-zinc-500 cursor-default uppercase tracking-[.4px]">
               Ethereum for everyone
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center">
             <div className="p-1">
-              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 rounded-full transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
+              <Link href={"#optimism"} className="flex bg-red-800 border border-red-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-800 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tigher">
                   Optimism
                 </h3>
               </Link>
             </div>
             <div className="p-1">
-              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 rounded-full transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
-                <h3 className="text-xl uppercase tracking-tigher">
-                  Starknet 
-                </h3>
-              </Link>
-            </div>
-            <div className="p-1">
-              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 rounded-full transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
-                <h3 className="text-xl uppercase tracking-tigher">
+              <Link href={"#arbitrum"} className="flex bg-blue-800 border border-blue-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tight">
                   Arbitrum 
                 </h3>
               </Link>
             </div>
             <div className="p-1">
-              <Link href={"#lightning"} className="flex bg-yellow-800 border border-yellow-600 rounded-full transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-800 px-6 py-2">
-                <h3 className="text-xl uppercase tracking-tigher">
+              <Link href={"#starknet"} className="flex bg-purple-800 border border-purple-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tight">
+                  Starknet 
+                </h3>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link href={"#zksync"} className="flex bg-violet-800 border border-violet-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tight">
+                  zkSync
+                </h3>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link href={"#lightning"} className="flex bg-yellow-800 border border-yellow-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-800 px-6 py-2">
+                <h3 className="text-xl uppercase tracking-tight">
                   Lightning
                 </h3>
               </Link>
@@ -108,7 +115,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
-          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
+          className="flex flex-col space-y-8 p-4 md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-red-900 uppercase tracking-tighest">
           Optimism
           </h2>
@@ -126,8 +133,44 @@ export default function Home() {
             </div>
             <div className="p-1">
               <Link
-                href={"https://kwenta.eth.limo"}
+                href={"https://app.optimism.io/bridge/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Bridge
+                </p>
+                <CubeTransparentIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
+            </div>
+          </section>
+        </motion.section>
+      </div>
+      {/* --------------------------------------- */}
+      <div id="arbitrum" className="snap-start w-screen min-h-screen flex items-center justify-center bg-blue-700">
+        <motion.section 
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .1 }}
+          className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
+          Arbitrum
+          </h2>
+          <section className="flex w-full items-center justify-center space-x-4">
+            <div className="p-1">
+              <Link
+                href={"https://app.1inch.io/#/1/unified/swap/ETH/DAI"}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+              >
+                <p className="text-xs md:text-base xl:text-xl">
+                  Trade
+                </p>
+                <CircleStackIcon className="h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6"/>
+              </Link>
+            </div>
+            <div className="p-1">
+              <Link
+                href={"https://bridge.arbitrum.io/"}
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Bridge
@@ -175,20 +218,20 @@ export default function Home() {
         </motion.section>
       </div>
       {/* --------------------------------------- */}
-      <div id="arbitrum" className="snap-start w-screen min-h-screen flex items-center justify-center bg-blue-700">
-        <motion.section 
+      <div id="zksync" className="snap-start w-screen min-h-screen flex items-center justify-center bg-violet-500">
+        <motion.section  
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .1 }}
           className="flex flex-col space-y-8 p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl items-center justify-center">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-blue-900 uppercase tracking-tighest">
-          Arbitrum
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] text-violet-900 uppercase tracking-tighest">
+          zkSync
           </h2>
           <section className="flex w-full items-center justify-center space-x-4">
             <div className="p-1">
               <Link
                 href={""}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Trade
@@ -199,7 +242,7 @@ export default function Home() {
             <div className="p-1">
               <Link
                 href={""}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   Bridge
@@ -223,7 +266,7 @@ export default function Home() {
           <section className="flex w-full items-center justify-center space-x-4">
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://www.binance.com/en/convert"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -234,7 +277,7 @@ export default function Home() {
             </div>
             <div className="p-1">
               <Link
-                href={""}
+                href={"https://muun.com/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex items-center space-x-2 lg:space-x-3 bg-yellow-700 border-yellow-300 text-yellow-50 transition-all ease-in-out duration-75 hover:bg-yellow-600 hover:border-yellow-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
