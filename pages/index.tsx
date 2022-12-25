@@ -148,7 +148,7 @@ export default function Home() {
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
-                href={"https://app.optimism.io/bridge/"}
+                href={"https://qx.app/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
