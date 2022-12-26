@@ -103,13 +103,13 @@ export default function Home() {
                 </h3>
               </Link>
             </div>
-            <div className="p-1 sm:col-span-2 md:col-span-4 justify-center flex items-center">
+            {/* <div className="p-1 sm:col-span-2 md:col-span-4 justify-center flex items-center">
               <Link href={"#boba"} className="flex bg-lime-800 border w-fit border-lime-600 rounded-full justify-center items-center transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-800 text-zinc-300 px-6 py-2">
                 <h3 className="text-xl uppercase tracking-tight">
                   Boba
                 </h3>
               </Link>
-            </div>
+            </div> */}
           </div>
         </motion.section>
       </div>
@@ -195,7 +195,7 @@ export default function Home() {
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
-                href={"https://bridge.arbitrum.io/"}
+                href={"https://tofunft.com/arbi"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
-                href={"https://starkgate.starknet.io/"}
+                href={"https://aspect.co/"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -289,7 +289,7 @@ export default function Home() {
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
-                href={"https://portal.zksync.io/bridge"}
+                href={"https://mintsquare.io/zksync-testnet"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -301,8 +301,8 @@ export default function Home() {
           </section>
         </motion.section>
       </div>
-
-      <div id="boba" className="snap-start w-screen min-h-screen flex items-center justify-center bg-lime-500">
+      {/* --------------------------------------- */}
+      {/* <div id="boba" className="snap-start w-screen min-h-screen flex items-center justify-center bg-lime-500">
         <motion.section  
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -336,7 +336,7 @@ export default function Home() {
             </div>
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
-                href={"https://gateway.boba.network/"}
+                href={"https://tofunft.com/boba"}
                 className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-lime-700 border-lime-300 text-lime-50 transition-all ease-in-out duration-75 hover:bg-lime-600 hover:border-lime-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
@@ -347,7 +347,7 @@ export default function Home() {
             </div>
           </section>
         </motion.section>
-      </div>
+      </div> */}
       {/* --------------------------------------- */}
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
