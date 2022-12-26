@@ -99,7 +99,7 @@ export default function Home() {
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
                 href={"https://qx.app/"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit md:w-full items-center space-x-2 lg:space-x-3 bg-red-700 border-red-300 text-red-50 transition-all ease-in-out duration-75 hover:bg-red-600 hover:border-red-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   NFTs
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
                 href={"https://tofunft.com/arbi"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit md:w-full items-center space-x-2 lg:space-x-3 bg-blue-700 border-blue-300 text-blue-50 transition-all ease-in-out duration-75 hover:bg-blue-600 hover:border-blue-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   NFTs
@@ -193,7 +193,7 @@ export default function Home() {
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
                 href={"https://aspect.co/"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit md:w-full items-center space-x-2 lg:space-x-3 bg-purple-700 border-purple-300 text-purple-50 transition-all ease-in-out duration-75 hover:bg-purple-600 hover:border-purple-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   NFTs
@@ -240,7 +240,7 @@ export default function Home() {
             <div className="p-1 sm:col-span-2 md:col-span-1 flex w-full justify-center">
               <Link
                 href={"https://mintsquare.io/zksync-testnet"}
-                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
+                className="px-6 py-2 border-[3px] lg:border-4 rounded-full flex justify-center w-fit md:w-full items-center space-x-2 lg:space-x-3 bg-violet-700 border-violet-300 text-violet-50 transition-all ease-in-out duration-75 hover:bg-violet-600 hover:border-violet-200"
               >
                 <p className="text-xs md:text-base xl:text-xl">
                   NFTs
